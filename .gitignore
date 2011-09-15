@@ -1,4 +1,5 @@
 ARToolKit.xcodeproj/xcuserdata/*
 *.mode1
 *.pbxuser
-
+xcuserdata
+*.xcuserstate
