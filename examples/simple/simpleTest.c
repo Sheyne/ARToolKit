@@ -87,7 +87,18 @@ static void mainLoop(void)
         cleanup();
         exit(0);
     }
-
+	
+	
+	//additions from sheyne, trying to understand how it is working.
+	
+	//from documentation on http://artoolkit.sourceforge.net/apidoc/structARMarkerInfo.html
+	
+	//also look at: http://www.hitl.washington.edu/artoolkit/documentation/devframework.htm
+	printf("pos: %f,%f\n", marker_info->pos[0], marker_info->pos[1]);
+	for (j=0; j<4; j++) {
+		printf("\t vertex: %f, %f\n", marker_info->vertex[j][0],marker_info->vertex[j][1]);
+	}
+	
     arVideoCapNext();
 
     /* check for object visibility */
